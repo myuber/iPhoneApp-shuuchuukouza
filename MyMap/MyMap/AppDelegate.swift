@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MyMap
 //
-//  Created by がり on 2020/07/23.
+//  Created by がり on 2020/07/24.
 //  Copyright © 2020 がり. All rights reserved.
 //
 
