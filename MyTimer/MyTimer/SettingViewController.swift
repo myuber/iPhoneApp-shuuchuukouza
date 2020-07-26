@@ -27,4 +27,7 @@ class SettingViewController: UIViewController {
     }
     */
 
+    @IBOutlet weak var timerSettingPicker: UIPickerView!
+    @IBAction func decisionButtonAction(_ sender: Any) {
+    }
 }
