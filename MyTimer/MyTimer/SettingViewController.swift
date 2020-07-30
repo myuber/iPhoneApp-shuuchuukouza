@@ -51,6 +51,8 @@ class SettingViewController: UIViewController, UIPickerViewDataSource, UIPickerV
 
     @IBOutlet weak var timerSettingPicker: UIPickerView!
     @IBAction func decisionButtonAction(_ sender: Any) {
+        // 前画面に戻る
+        _ = navigationController?.popViewController(animated: true)
     }
     
     // UIPickerViewの列数を設定
@@ -66,5 +68,13 @@ class SettingViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     // UIPickerViewの表示する内容を設定
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return String(settingArray[row])
+    }
+    
+    // picker選択時に実行
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // UserDefaultsの設定
+        let settings = UserDefaults.standard
+        settings.setValue(settingArray[row], forKey: settingKey)
+        settings.synchronize()
     }
 }

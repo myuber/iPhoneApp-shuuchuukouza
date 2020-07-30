@@ -98,6 +98,15 @@ class ViewController: UIViewController {
             count = 0
             // タイマー停止
             timer.invalidate()
+            
+            // カスタマイズ編:ダイアログを作成
+            let alertContoller = UIAlertController(title: "終了", message:"タイマー終了時間です", preferredStyle: .actionSheet)
+            // ダイアログに表示させるOKボタンを作成
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            // アクションを追加
+            alertContoller.addAction(defaultAction)
+            // ダイアログの表示
+            present(alertContoller, animated: true, completion: nil)
         }
     }
     
