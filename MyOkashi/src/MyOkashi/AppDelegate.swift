@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MyOkashi
 //
-//  Created by がり on 2020/08/04.
-//  Copyright © 2020 がり. All rights reserved.
+//  Created by Swift-Beginners on 2019/10/08.
+//  Copyright © 2019 Swift-Beginners. All rights reserved.
 //
 
 import UIKit
